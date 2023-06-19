@@ -93,10 +93,8 @@ a:hover {
 .groups-hero {
     background-color: #DC6243;
 }
+
 /*RENTALS MAIN PAGE*/
-.container {
-    display: flex;
-}
 .deliveries {
     margin-left: 24px;
 }
@@ -153,25 +151,8 @@ a:hover {
 #card4 {
     grid-area: card4;
 }   
-@media only screen and (max-width: 600px) {
-    .body {
-        margin: 8px;
-    }
-    .grid {
-        margin: 8px;
-        display:flex;
-        flex-direction: column;
-    }
-    .container {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .container .subContainer {
-        margin-top: 16px;
-    }
-}
-/*Cards*/
+
+/*Grid Cards*/
 #card1, #card2, #card3, #card4 {
     background-color: #ffffff;
     border-radius: 16px;
@@ -188,7 +169,7 @@ img {
     height: 400px;
 }
 
-/*Card Drop Down*/
+/*Drop Downs*/
 .dropButton {
     background-color: #fff;
     color: black;
@@ -230,23 +211,22 @@ img {
 .dropdownContent {
     display: none;
 }
-/*Grop Rentals*/
+/*Group Rentals*/
 .whyEze {
     margin: 24px;
 }
 .callToAction {
     margin: 24px;
 }
-/*Maps Flexbox*/
+
+/*Flexbox Containers*/
 .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     align-items: flex-start;
     gap:24px;
-    margin: 24px;
-    
+    margin: 24px;  
 }
 .container .subContainer {
     justify-content: center;
@@ -258,7 +238,6 @@ img {
     filter: drop-shadow(1px 1px 4px #d4d4d4);
     width: 1fr;
     height: 100%;
-
 }
 .container img {
     width: 400px;
@@ -270,7 +249,6 @@ img {
     color: #FFFFFF;
     font-weight: bold;
 }
-
 .container .arrow {
     border: solid #ffffff;
     border-width: 0 2px 2px 0;
@@ -280,7 +258,25 @@ img {
     margin-left: 8px;
 }
 
-
+/*MOBILE VIEW*/
+@media only screen and (max-width: 600px) {
+    .body {
+        margin: 8px;
+    }
+    .grid {
+        margin: 8px;
+        display:flex;
+        flex-direction: column;
+    }
+    .container {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container .subContainer {
+        margin-top: 16px;
+    }
+}
 
 
 
