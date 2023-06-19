@@ -1,0 +1,279 @@
+/*Design*/
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, p, li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button {
+    background-color: #DC6243;
+    padding: 16px 32px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+button:hover {
+    font-weight: bolder;
+}
+
+/*temp navbar*/
+#nav {
+    background-color: #000000;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+#nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #DC6243;
+    font-weight: bold;
+}
+a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/*HEROS*/
+.hero{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.heroText{
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 24px
+}
+.welcomeText {
+    margin:24px;
+}
+.hero-image {    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Screenshot_20221213_015433.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    margin: 0px;
+}
+.hero-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 24px;
+    text-align: left;
+    color:#FFFFFF;
+    align-items:baseline;
+    align-content: center;
+    padding: 288px;  
+}
+.hero-text {
+    text-align: center;
+}
+.hero-text p {
+    padding-bottom: 24px;
+}
+.welcome {
+    text-align: center;
+}
+.hero {
+    background-color: #DC6243;
+}
+.maps-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/routes.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    margin: 0px;
+}
+.groups-hero {
+    background-color: #DC6243;
+}
+/*RENTALS MAIN PAGE*/
+.brand-container {
+    display: flex;
+}
+.deliveries {
+    display: flex;
+}
+.deliveries img {
+    max-width: min-content;
+    margin-left: 24px;
+    margin-right:48px
+}
+.reviews img {
+    max-width: min-content;
+    max-height: 42px;
+    padding: 0px;
+}
+.actions {
+    display:flex;
+    justify-content: space-between;
+}
+/*RENTALS GRID*/
+.grid {
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-area: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: max-content;
+    grid-gap: 16px;
+    grid-template-areas: 
+    "card1 card2" 
+    "card3 card4";
+    justify-content: center;
+    align-items: flex-start;
+}
+.grid button {
+    margin-top: 8px;
+}
+#card1 {
+    grid-area: card1;
+}
+#card2 {
+    grid-area: card2;
+}
+#card3 {
+    grid-area: card3;
+}
+#card4 {
+    grid-area: card4;
+}   
+@media only screen and (max-width: 600px) {
+    .body {
+        margin: 8px;
+    }
+    .grid {
+        margin: 8px;
+        display:flex;
+        flex-direction: column;
+    }
+    .container {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .container .subContainer {
+        margin-top: 16px;
+    }
+}
+/*Cards*/
+#card1, #card2, #card3, #card4 {
+    background-color: #ffffff;
+    border-radius: 16px;
+    display: block;
+    text-align: center;
+    justify-items: center;
+    width: auto;
+    padding: 16px;
+    filter: drop-shadow(1px 1px 4px #d4d4d4);
+}
+img {
+    border-radius: 8px;
+    width: 100%;
+    height: 400px;
+}
+
+/*Card Drop Down*/
+.dropButton {
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    font-weight: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 8px;
+    border-color: #d4d4d4;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-left: 8px;
+}        
+.dropdown {
+    display: block;
+    justify-content: center;
+    max-height: min-content;
+    margin: 0 auto;
+}
+.dropdown:hover .dropButton {
+    font-weight: bold;
+}
+.dropdown:hover .dropButton .arrow {
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+    border-width: 0 2px 2px 0;
+}
+.dropdown:hover .dropdownContent {
+    display: block;
+    text-align: start;
+    justify-content: start;
+    width: 400px;
+    margin-top: 8px;
+}
+.dropdownContent {
+    display: none;
+}
+/*Grop Rentals*/
+.whyEze {
+    margin: 24px;
+}
+.callToAction {
+    margin: 24px;
+}
+/*Maps Flexbox*/
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start;
+    gap:24px;
+    margin: 24px;
+    
+}
+.container .subContainer {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 16px;
+    filter: drop-shadow(1px 1px 4px #d4d4d4);
+
+}
+.container img {
+    width: 400px;
+    height: 300px;
+}
+.container .dropButton {
+    width: 100%;
+    background-color: #DC6243;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.container .arrow {
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-left: 8px;
+}
+
+
+
+
+
+
+
