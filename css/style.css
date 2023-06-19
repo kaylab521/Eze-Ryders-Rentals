@@ -94,21 +94,29 @@ a:hover {
     background-color: #DC6243;
 }
 /*RENTALS MAIN PAGE*/
-.brand-container {
+.container {
     display: flex;
 }
 .deliveries {
-    display: flex;
+    margin-left: 24px;
 }
 .deliveries img {
     max-width: min-content;
-    margin-left: 24px;
-    margin-right:48px
+    margin-right:48px;
 }
-.reviews img {
-    max-width: min-content;
-    max-height: 42px;
-    padding: 0px;
+.deliveries div {
+    display: flex;
+}
+.reviews {
+    margin: 24px;
+    line-height: 0x;
+}
+
+.checked {
+    color: #DC6243;
+}
+.callToAction {
+    margin: 24px;
 }
 .actions {
     display:flex;
