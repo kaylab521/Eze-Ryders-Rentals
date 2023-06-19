@@ -158,8 +158,6 @@ a:hover {
         display:flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 8px;
-        margin-right: 8px;
     }
     .container .subContainer {
         margin-top: 16px;
@@ -234,6 +232,7 @@ img {
 /*Maps Flexbox*/
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     align-items: flex-start;
@@ -249,6 +248,8 @@ img {
     padding: 16px;
     border-radius: 16px;
     filter: drop-shadow(1px 1px 4px #d4d4d4);
+    width: 1fr;
+    height: 100%;
 
 }
 .container img {
