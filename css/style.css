@@ -119,7 +119,17 @@ a:hover {
     margin: 24px;
     line-height: 0x;
 }
-
+.rating {
+    background-color: #fff;
+    border-color: #d4d4d4;
+    padding: 24px;
+    filter: drop-shadow(1px 1px 4px #d4d4d4);
+    border-radius: 16px;
+}
+.rating h4 {
+    line-height: normal;
+    padding-bottom: 0px;
+}
 .checked {
     color: #DC6243;
 }
