@@ -97,23 +97,37 @@ a:hover {
 /*RENTALS MAIN PAGE*/
 .deliveries {
     margin: 24px;
-    display: flex;
-    justify-content: space-between;
+    padding: 16px;
+    padding-top: 8px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(1px 1px 4px #d4d4d4);
 }
 .deliveries img {
     max-width: min-content;
     max-height: min-content;
 }
-.deliveries div {
+.deliveries .text {
+    height: fit-content;
+    width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-.deliveries .text {
-    flex-direction: column;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    line-height: 0px;
+}
+.deliveries .dropButton {
+    background-color: #DC6243;
+    color: #fff;
+    font-weight: bold;
+    width: auto;
+}
+.deliveries .arrow {
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    margin-left: 8px;
+
 }
 .reviews {
     margin: 24px;
@@ -142,6 +156,7 @@ a:hover {
 }
 .heading {
     margin: 24px;
+    margin-top: 48px;
 }
 /*RENTALS GRID*/
 .grid {
