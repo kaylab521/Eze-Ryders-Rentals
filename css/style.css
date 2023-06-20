@@ -96,14 +96,24 @@ a:hover {
 
 /*RENTALS MAIN PAGE*/
 .deliveries {
-    margin-left: 24px;
+    margin: 24px;
+    display: flex;
+    justify-content: space-between;
 }
 .deliveries img {
     max-width: min-content;
-    margin-right:48px;
+    max-height: min-content;
 }
 .deliveries div {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.deliveries .text {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    line-height: 0px;
 }
 .reviews {
     margin: 24px;
@@ -119,6 +129,9 @@ a:hover {
 .actions {
     display:flex;
     justify-content: space-between;
+}
+.heading {
+    margin: 24px;
 }
 /*RENTALS GRID*/
 .grid {
@@ -145,12 +158,18 @@ a:hover {
 #card2 {
     grid-area: card2;
 }
+#card2 img {
+    filter: brightness(.9);
+}
 #card3 {
     grid-area: card3;
 }
 #card4 {
     grid-area: card4;
-}   
+} 
+#card4 img {
+    filter: brightness(.9);
+}  
 
 /*Grid Cards*/
 #card1, #card2, #card3, #card4 {
@@ -159,7 +178,6 @@ a:hover {
     display: block;
     text-align: center;
     justify-items: center;
-    width: auto;
     padding: 16px;
     filter: drop-shadow(1px 1px 4px #d4d4d4);
 }
@@ -205,7 +223,6 @@ img {
     display: block;
     text-align: start;
     justify-content: start;
-    width: 400px;
     margin-top: 8px;
 }
 .dropdownContent {
@@ -236,8 +253,8 @@ img {
     padding: 16px;
     border-radius: 16px;
     filter: drop-shadow(1px 1px 4px #d4d4d4);
-    width: 1fr;
-    height: 100%;
+    width: 100em;
+    height: 100%
 }
 .container img {
     width: 400px;
@@ -248,6 +265,7 @@ img {
     background-color: #DC6243;
     color: #FFFFFF;
     font-weight: bold;
+    border-color: #DC6243;
 }
 .container .arrow {
     border: solid #ffffff;
@@ -271,10 +289,23 @@ img {
     .container {
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        column-width: 30%;
+        margin: 8px;
     }
     .container .subContainer {
-        margin-top: 16px;
+        margin-top: 8px;
+        width: 85%
+    }
+    .deliveries {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .deliveries .text {
+        min-width: max-content;
+        max-height: min-content;
+        line-height: normal;
     }
 }
 
